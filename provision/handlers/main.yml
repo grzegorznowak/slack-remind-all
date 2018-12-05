@@ -1,0 +1,3 @@
+---
+- name: install requirements.txt
+  command: "pip3 install -r {{ slack_remind_all_location }}/requirements.txt"

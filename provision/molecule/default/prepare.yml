@@ -12,3 +12,5 @@
       raw: /usr/bin/rpm -q -f /usr/bin/rpm >/dev/null 2>&1 && (test -e /usr/bin/python || (yum update && yum install python-minimal))
       changed_when: false
       ignore_errors: true
+
+

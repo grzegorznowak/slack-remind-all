@@ -13,7 +13,8 @@
   apt:
     update_cache: true
     cache_valid_time: 1800
-    name: ['python3.6', 'python3-pip']
+    # curl is just for testing but it's useful enough to be installed by default
+    name: ['python3.6', 'python3-pip', 'curl']
     state: present
   when: ansible_distribution == 'Ubuntu'
         and ((ansible_distribution_release == 'xenial')
@@ -23,7 +24,7 @@
   apt:
     update_cache: true
     cache_valid_time: 1800
-    name: ['virtualenv', 'git-core', 'python3-pip']
+    name: ['virtualenv', 'git-core', 'python3-pip', 'curl']
     state: present
 
 - name: Deploy the app on the server via git
@@ -31,19 +32,10 @@
     repo: 'https://github.com/grzegorznowak/slack-remind-all'
     dest: "{{ slack_remind_all_location }}"
     version: master
+  notify: install requirements.txt
 
-#- name: Manually create the initial virtualenv
-#  command: virtualenv "{{ slack_remind_all_location }}/pyenv" -p python3.6 creates="{{ slack_remind_all_location }}/pyenv"
-
-## Install specified python requirements in indicated (virtualenv).
-#- name: install requirements.txt for old ubuntus
-#  shell: "pip3 install -r {{ slack_remind_all_location }}/requirements.txt"
-#  when: ansible_distribution == 'Ubuntu'
-#    and ((ansible_distribution_release == 'xenial')
-#    or ansible_lsb.major_release|int < 16)
-
-- name: install requirements.txt
-  shell: "pip3 install -r {{ slack_remind_all_location }}/requirements.txt"
+- name: Flush Handlers.
+  meta: flush_handlers
 
 - name: Copy service file template
   template: src=service.j2 dest=/lib/systemd/system/{{ slack_remind_all_service }}.service
