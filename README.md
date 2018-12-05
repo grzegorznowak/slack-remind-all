@@ -57,15 +57,15 @@ please note: provisioned service is exposed via http on a container's port, so n
 ### Slack
 
 #### Sample output from the app (with one user and one bot in the channel) 
-![sample outpuot](img/sample output.png "Sample output")
+![sample outpuot](img/sample%20output.png "Sample output")
 
 #### Crucial Slack App config:
 
 * make sure to add the slash command 
-![app slash setup](img/app slash setup.png "App slash setup")
+![app slash setup](https://github.com/grzegorznowak/slack-remind-all/blob/master/img/app%20slash%20setup.png "App slash setup")
 
 * and configure the touching points
-![slash config](img/slash config.png "Slash config")
+![slash config](img/slash%20config.png "Slash config")
 
 ##### make sure to put in your app endpoint's URL in the config with the slash handler URI specified 
 ie. `https://example.com:3000/slack/slash` 
