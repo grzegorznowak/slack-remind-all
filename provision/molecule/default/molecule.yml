@@ -6,7 +6,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: ansible-slack-notify-all-instance-18-08
+  - name: ansible-slack-notify-all-instance-18-04
     image: ubuntu/bionic/amd64
   - name: ansible-slack-notify-all-instance-16-04
     image: ubuntu/xenial/amd64

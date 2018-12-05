@@ -5,10 +5,10 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/var/www/auditapp-backend
+Environment=SLACK_SIGNING_SECRET={{ slack_remind_all_secret }}
+Environment=SLACK_OAUTH_TOKEN={{ slack_remind_all_oauth }}
 
-ExecStart=SLACK_SIGNING_SECRET={{ slack_remind_all_secret }} \
-SLACK_OAUTH_TOKEN={{ slack_remind_all_oauth }} \
-python {{ slack_remind_all_location }}/slack_remind_all/server.py
+ExecStart=/usr/bin/python3 {{ slack_remind_all_location }}/slack_remind_all/server.py
 
 PIDFile=/var/run/{{ slack_remind_all_service }}.pid
 TimeoutStopSec=0
