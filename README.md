@@ -20,6 +20,8 @@ the channel. Except for bots - those poor things can't yet have reminders regist
 of their favourite programming language, or a game update on Steam. So imagine how many hours of your life this single 
 tool will spare in the long run
 
+`Disclaimerinho: Me being a dev myself`
+
 === All feedback & PRs highly appreciated === 
 ## Requirements
 
