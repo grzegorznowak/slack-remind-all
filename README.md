@@ -4,13 +4,13 @@ set a reminder for all users in a channel directly using a single command
 
 ### Motivation
 
-**T**he good old `/remind` slash command that comes by default from slack, doesnt handle channels' reminders in the way it is
+**T**he good old `/remind` slash command that comes by default with slack, doesnt handle channels' reminders in the way it is
 super useful normally. When you need to actually broadcast a message to everyone, making sure they will be prompted directly 
-at some point, it falls short, by only showing a *dull message* no one will pay attention to.
+at some point, falls short, by only showing a dull message **no one** will pay attention to.
 
-**A**nd it's the place the custom app comes to the rescue, making it possible to issue a channel-wide `/remindall` command,
+**I**t's the place the custom app comes to the rescue, making it possible to issue a channel-wide `/remindall` command,
 with virtually the same syntax as the original one, that then registers **direct reminders** to everyone participating in 
-the channel. Expect for bots, those poor things can't yet have reminders registered `(as of Dec 2018)`  
+the channel. Except for bots - those poor things can't yet have reminders registered for themselves `(as of Dec 2018)`  
 
 **F**or an example take an update of software you just compiled for your team, and need to spread the word. Usually, and this
 is proven by years of practice, it takes 3 prompts minimum for developer to acknowledge anything that isn't a new version
