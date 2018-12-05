@@ -1,0 +1,29 @@
+---
+- name: Install dependencies
+  apt:
+    update_cache: true
+    cache_valid_time: 1800
+    name: ['virtualenv', 'git-core']
+    state: present
+
+- git:
+    repo: 'https://github.com/grzegorznowak/slack-remind-all'
+    dest: "{{ slack_remind_all_location }}"
+
+- name: Manually create the initial virtualenv
+  command: virtualenv "{{ slack_remind_all_location }}/pyenv" -p python3.6.7 creates="{{ slack_remind_all_location }}/pyenv"
+
+# Install specified python requirements in indicated (virtualenv).
+- name: install requirements.txt
+  pip:
+    requirements: "{{ slack_remind_all_location }}/requirements.txt"
+    virtualenv: "{{ slack_remind_all_location }}/pyenv"
+
+- name: Copy service file template
+  template: src=service.j2 dest=/lib/systemd/system/{{ slack_remind_all_service }}.service
+
+- name: Copy service file template
+  template: src=service.j2 dest=/lib/systemd/system/{{ slack_remind_all_service }}.service
+
+- name: Start the custom redis service
+  service: name={{ slack_remind_all_service }}.service state=started

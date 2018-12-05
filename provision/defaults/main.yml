@@ -1,0 +1,5 @@
+---
+slack_remind_all_location: "/var/lib/slack_remind_all"
+slack_remind_all_service: "slack-remind-all"
+slack_remind_all_oauth: "xxx"
+slack_remind_all_secret: "xxx"

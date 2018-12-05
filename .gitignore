@@ -1,1 +1,4 @@
 pyenv
+.idea
+.hidden
+__pycache__
