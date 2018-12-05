@@ -20,7 +20,7 @@ set a reminder for all users in a channel directly using a single command
 ```
 ngrok http 3000
 ```
-* start the flaks server
+* start the flask server
 ```
 SLACK_SIGNING_SECRET={{ slack_remind_all_secret }} \
 SLACK_OAUTH_TOKEN={{ slack_remind_all_oauth }} \
@@ -31,7 +31,7 @@ by default the app listens on `port 3000`, and it's currently fixed, but you can
 
 
 ## Provisioning on a server/container
-see [Provisioning instructions](priovision/README.md)
+see [Provisioning instructions](provision/README.md)
 
 please note: provisioned service is exposed via http on a container's port, so need a SSL terminating proxy to function best
   
