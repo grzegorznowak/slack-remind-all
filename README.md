@@ -62,7 +62,7 @@ please note: provisioned service is exposed via http on a container's port, so n
 #### Crucial Slack App config:
 
 * make sure to add the slash command 
-![app slash setup](https://github.com/grzegorznowak/slack-remind-all/blob/master/img/app%20slash%20setup.png "App slash setup")
+![app slash setup](img/app%20slash%20setup.png "App slash setup")
 
 * and configure the touching points
 ![slash config](img/slash%20config.png "Slash config")
