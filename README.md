@@ -2,6 +2,8 @@
 
 set a reminder for all users in a channel directly using a single command
 
+*[A placeholder for a list of cool badges, coming soonish]*
+
 ### Motivation
 
 **T**he good old `/remind` slash command that comes by default with slack, doesnt handle channels' reminders in the way it is
