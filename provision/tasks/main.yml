@@ -1,4 +1,24 @@
 ---
+
+# Add nginx stable repository from PPA and install its signing key.
+# On Ubuntu target:
+- name: Add repo to install python3.6
+  apt_repository:
+    repo: ppa:deadsnakes/ppa
+  when: ansible_distribution == 'Ubuntu'
+        and ((ansible_distribution_release == 'xenial')
+        or ansible_lsb.major_release|int < 16)
+
+- name: Install dependencies for old ubuntus
+  apt:
+    update_cache: true
+    cache_valid_time: 1800
+    name: ['python3.6', 'python3-pip']
+    state: present
+  when: ansible_distribution == 'Ubuntu'
+        and ((ansible_distribution_release == 'xenial')
+        or ansible_lsb.major_release|int < 16)
+
 - name: Install dependencies
   apt:
     update_cache: true
@@ -6,18 +26,24 @@
     name: ['virtualenv', 'git-core']
     state: present
 
-- git:
+- name: Deploy the app on the server via git
+  git:
     repo: 'https://github.com/grzegorznowak/slack-remind-all'
     dest: "{{ slack_remind_all_location }}"
+    version: master
 
-- name: Manually create the initial virtualenv
-  command: virtualenv "{{ slack_remind_all_location }}/pyenv" -p python3.6.7 creates="{{ slack_remind_all_location }}/pyenv"
+#- name: Manually create the initial virtualenv
+#  command: virtualenv "{{ slack_remind_all_location }}/pyenv" -p python3.6 creates="{{ slack_remind_all_location }}/pyenv"
 
 # Install specified python requirements in indicated (virtualenv).
+- name: install requirements.txt for old ubuntus
+  shell: "pip3 install -r {{ slack_remind_all_location }}/requirements.txt"
+  when: ansible_distribution == 'Ubuntu'
+    and ((ansible_distribution_release == 'xenial')
+    or ansible_lsb.major_release|int < 16)
+
 - name: install requirements.txt
-  pip:
-    requirements: "{{ slack_remind_all_location }}/requirements.txt"
-    virtualenv: "{{ slack_remind_all_location }}/pyenv"
+  shell: "pip install -r {{ slack_remind_all_location }}/requirements.txt"
 
 - name: Copy service file template
   template: src=service.j2 dest=/lib/systemd/system/{{ slack_remind_all_service }}.service
