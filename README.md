@@ -31,7 +31,7 @@ tool will spare in the long run
 ## Installation
 
 * clone the repo `git clone https://github.com/grzegorznowak/slack-remind-all.git`
-* setup virtualenv: `virtualenv pyenv -p python3.6.7`
+* setup virtualenv: `virtualenv pyenv -p python3.6`
 * activate venv: `. pyenv/bin/activate`
 * `pip install -f requirements.txt`
 
