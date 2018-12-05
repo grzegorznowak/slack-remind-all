@@ -25,7 +25,7 @@ tool will spare in the long run
 === All feedback & PRs highly appreciated === 
 ## Requirements
 
-* python 3.5+
+* python 3.6+
 * (optional) ngrok
 
 ## Installation
