@@ -14,8 +14,9 @@ at some point, falls short, by only showing a dull message **no one** will pay a
 with virtually the same syntax as the original one, that then registers **direct reminders** to everyone participating in 
 the channel. Except for bots - those poor things can't yet have reminders registered for themselves `(as of Dec 2018)`  
 
-**F**or an example take an update of software you just compiled for your team, and need to spread the word. Usually, and this
-is proven by years of practice, it takes 3 prompts minimum for developer to acknowledge anything that isn't a new version
+**T**ake an update of a software you just compiled for your team. Gotta spread the word now!
+
+**U**sually, and this is proven by years of practice, it takes 3 prompts minimum for a developer to acknowledge anything that isn't a new version
 of their favourite programming language, or a game update on Steam. So imagine how many hours of your life this single 
 tool will spare in the long run
 
@@ -57,7 +58,7 @@ please note: provisioned service is exposed via http on a container's port, so n
 ### Slack
 
 #### Sample output from the app (with one user and one bot in the channel) 
-![sample outpuot](img/sample%20output.png "Sample output")
+![sample output](img/sample%20output.png "Sample output")
 
 #### Crucial Slack App config:
 
