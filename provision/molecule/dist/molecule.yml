@@ -1,0 +1,24 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: lxd
+lint:
+  name: yamllint
+platforms:
+  - name: slack-notify-dist-18-04
+    image: ubuntu/bionic/amd64
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+  env:
+    ANSIBLE_ROLES_PATH: $HOME/.ansible/roles
+    ANSIBLE_LOCAL_TEMP: $HOME/.ansible/tmp_df6vb2vfe
+    ANSIBLE_REMOTE_TEMP: $HOME/.ansible/tmp_df6vb2vfe
+scenario:
+  name: dist
+verifier:
+  name: testinfra
+  lint:
+    name: flake8

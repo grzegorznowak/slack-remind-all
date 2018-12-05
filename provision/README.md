@@ -1,5 +1,7 @@
 ## Slack remind all ansible provisioning&testing
 
+##### please note: provisioned service is exposed via http on a container's port, so need a SSL terminating proxy to function best
+
 ### Provisioning via ansible-playbook
 
 * dist playbook
@@ -26,10 +28,15 @@ but feel free to `dockerize` the app and do PR if you need it
 ```
 pip install molecule
 ```
-* then create your molecule scenario with your image settings
+* then
+```
+cp molecule/dist/playbook.dist.yml molecule/dist/playbook.yml
+
+```
+* update tokens and oauth keys
 * provision:
 ```
-molecule provision --scenario-name=[your-scenario-name]
+molecule create --scenario-name=dist && molecule converge --scenario-name=dist
 ```
         
 ### Testing via molecule

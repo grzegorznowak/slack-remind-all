@@ -1,0 +1,1107 @@
+versions pytest-3.7.1, py-1.5.4, python-3.6.6.final.0
+cwd=/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default
+args=['--connection=ansible', '--ansible-inventory=/tmp/molecule/ansible-nvm-node/default/ansible_inventory.yml', '-p', 'no:cacheprovider', '--debug', '/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py', '-vvv']
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x7fa9b03f2320>
+    pytest_plugin_registered [hook]
+        plugin: <Session 'default'>
+        manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x7fa9b03f2320>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x7fa9af93b2e8>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+    find_module called for: py._io [assertion]
+    find_module called for: py._io.terminalwriter [assertion]
+    find_module called for: termios [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x7fa9b03f2320>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/mark/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/assertion/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.resultlog' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/resultlog.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'testinfra.plugin' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/testinfra/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.capture.CaptureManager object at 0x7fa9af991c50>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session 'default'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x7fa9af93b2e8>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x7fa9af93b5c0>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session 'default'>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x7fa9b03f2320>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/mark/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/assertion/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.resultlog' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/resultlog.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'testinfra.plugin' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/testinfra/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.capture.CaptureManager object at 0x7fa9af991c50>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session 'default'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x7fa9af93b2e8>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x7fa9af93b5c0>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x7fa9af93b320>
+          manager: <_pytest.config.PytestPluginManager object at 0x7fa9b211df98>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x7fa9b03f2320>
+          startdir: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default
+      finish pytest_report_header --> [['rootdir: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default, inifile:', 'plugins: testinfra-1.14.1'], ['using: pytest-3.7.1 pylib-1.5.4', 'setuptools registered plugins:', '  testinfra-1.14.1 at /home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/testinfra/plugin.py']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session 'default'>
+    perform_collect <Session 'default'> ['/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session 'default'>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session 'default'>
+        processing argument /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py [collection]
+            pytest_ignore_collect [hook]
+                path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/__init__.py
+                config: <_pytest.config.Config object at 0x7fa9b03f2320>
+            finish pytest_ignore_collect --> False [hook]
+            pytest_collect_file [hook]
+                path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/__init__.py
+                parent: <Session 'default'>
+              pytest_pycollect_makemodule [hook]
+                  path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/__init__.py
+                  parent: <Session 'default'>
+              finish pytest_pycollect_makemodule --> <Package '/home/grzegorz/My_Webs/ansible-nvm-node/molecule'> [hook]
+            finish pytest_collect_file --> [<Package '/home/grzegorz/My_Webs/ansible-nvm-node/molecule'>] [hook]
+            pytest_ignore_collect [hook]
+                path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/__init__.py
+                config: <_pytest.config.Config object at 0x7fa9b03f2320>
+            finish pytest_ignore_collect --> False [hook]
+            pytest_collect_file [hook]
+                path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/__init__.py
+                parent: <Session 'default'>
+              pytest_pycollect_makemodule [hook]
+                  path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/__init__.py
+                  parent: <Session 'default'>
+              finish pytest_pycollect_makemodule --> <Package '/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default'> [hook]
+            finish pytest_collect_file --> [<Package '/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default'>] [hook]
+            pytest_ignore_collect [hook]
+                path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/__init__.py
+                config: <_pytest.config.Config object at 0x7fa9b03f2320>
+            finish pytest_ignore_collect --> False [hook]
+            pytest_collect_file [hook]
+                path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/__init__.py
+                parent: <Session 'default'>
+              pytest_pycollect_makemodule [hook]
+                  path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/__init__.py
+                  parent: <Session 'default'>
+              finish pytest_pycollect_makemodule --> <Package '/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests'> [hook]
+            finish pytest_collect_file --> [<Package '/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests'>] [hook]
+            pytest_collect_file [hook]
+                path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py
+                parent: <Session 'default'>
+              pytest_pycollect_makemodule [hook]
+                  path: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py
+                  parent: <Session 'default'>
+              finish pytest_pycollect_makemodule --> <Module 'tests/test_default.py'> [hook]
+            finish pytest_collect_file --> [<Module 'tests/test_default.py'>] [hook]
+          matchnodes [<Module 'tests/test_default.py'>] [] [collection]
+            matchnodes finished ->  1 nodes [collection]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=1 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=1 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+    genitems <Module 'tests/test_default.py'> [collection]
+      pytest_collectstart [hook]
+          collector: <Module 'tests/test_default.py'>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module 'tests/test_default.py'>
+      find_module called for: molecule [assertion]
+      find_module called for: molecule.default [assertion]
+      find_module called for: molecule.default.tests [assertion]
+      find_module called for: molecule.default.tests.test_default [assertion]
+      matched test file (was specified on cmdline): '/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py' [assertion]
+      _read_pyc(/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py): invalid or out of date pyc [assertion]
+      rewriting '/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py' [assertion]
+      find_module called for: testinfra.utils.ansible_runner [assertion]
+      matched marked file 'testinfra.utils.ansible_runner' (from 'testinfra') [assertion]
+      found cached rewritten pyc for '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/testinfra/utils/ansible_runner.py' [assertion]
+      find_module called for: ansible [assertion]
+      find_module called for: ansible.release [assertion]
+      find_module called for: ansible.constants [assertion]
+      find_module called for: jinja2 [assertion]
+      find_module called for: jinja2.environment [assertion]
+      find_module called for: jinja2.nodes [assertion]
+      find_module called for: jinja2.utils [assertion]
+      find_module called for: jinja2._compat [assertion]
+      find_module called for: pickle [assertion]
+      find_module called for: _compat_pickle [assertion]
+      find_module called for: org [assertion]
+      find_module called for: _pickle [assertion]
+      find_module called for: markupsafe [assertion]
+      find_module called for: markupsafe._compat [assertion]
+      find_module called for: markupsafe._speedups [assertion]
+      find_module called for: markupsafe._native [assertion]
+      find_module called for: jinja2.defaults [assertion]
+      find_module called for: jinja2.filters [assertion]
+      find_module called for: jinja2.runtime [assertion]
+      find_module called for: jinja2.exceptions [assertion]
+      find_module called for: jinja2.tests [assertion]
+      find_module called for: jinja2.lexer [assertion]
+      find_module called for: unicodedata [assertion]
+      find_module called for: jinja2._identifier [assertion]
+      find_module called for: jinja2.parser [assertion]
+      find_module called for: jinja2.compiler [assertion]
+      find_module called for: jinja2.visitor [assertion]
+      find_module called for: jinja2.optimizer [assertion]
+      find_module called for: jinja2.idtracking [assertion]
+      find_module called for: jinja2.loaders [assertion]
+      find_module called for: jinja2.bccache [assertion]
+      find_module called for: jinja2.asyncsupport [assertion]
+      find_module called for: asyncio [assertion]
+      find_module called for: asyncio.selectors [assertion]
+      find_module called for: asyncio.base_events [assertion]
+      find_module called for: concurrent [assertion]
+      find_module called for: concurrent.futures [assertion]
+      find_module called for: concurrent.futures._base [assertion]
+      find_module called for: concurrent.futures.process [assertion]
+      find_module called for: queue [assertion]
+      find_module called for: multiprocessing [assertion]
+      find_module called for: multiprocessing.context [assertion]
+      find_module called for: multiprocessing.process [assertion]
+      find_module called for: multiprocessing.reduction [assertion]
+      find_module called for: array [assertion]
+      find_module called for: multiprocessing.connection [assertion]
+      find_module called for: _multiprocessing [assertion]
+      find_module called for: multiprocessing.util [assertion]
+      find_module called for: _winapi [assertion]
+      find_module called for: concurrent.futures.thread [assertion]
+      find_module called for: asyncio.compat [assertion]
+      find_module called for: asyncio.coroutines [assertion]
+      find_module called for: asyncio.constants [assertion]
+      find_module called for: asyncio.events [assertion]
+      find_module called for: asyncio.base_futures [assertion]
+      find_module called for: asyncio.log [assertion]
+      find_module called for: asyncio.futures [assertion]
+      find_module called for: _asyncio [assertion]
+      find_module called for: asyncio.base_tasks [assertion]
+      find_module called for: asyncio.tasks [assertion]
+      find_module called for: asyncio.locks [assertion]
+      find_module called for: asyncio.protocols [assertion]
+      find_module called for: asyncio.queues [assertion]
+      find_module called for: asyncio.streams [assertion]
+      find_module called for: asyncio.subprocess [assertion]
+      find_module called for: asyncio.transports [assertion]
+      find_module called for: asyncio.unix_events [assertion]
+      find_module called for: asyncio.base_subprocess [assertion]
+      find_module called for: asyncio.selector_events [assertion]
+      find_module called for: ssl [assertion]
+      find_module called for: ipaddress [assertion]
+      find_module called for: _ssl [assertion]
+      find_module called for: asyncio.sslproto [assertion]
+      find_module called for: jinja2.asyncfilters [assertion]
+      find_module called for: ansible.module_utils [assertion]
+      find_module called for: ansible.module_utils._text [assertion]
+      find_module called for: ansible.module_utils.six [assertion]
+      find_module called for: ansible.module_utils.parsing [assertion]
+      find_module called for: ansible.module_utils.parsing.convert_bool [assertion]
+      find_module called for: ansible.config [assertion]
+      find_module called for: ansible.config.manager [assertion]
+      find_module called for: yaml [assertion]
+      find_module called for: yaml.error [assertion]
+      find_module called for: yaml.tokens [assertion]
+      find_module called for: yaml.events [assertion]
+      find_module called for: yaml.nodes [assertion]
+      find_module called for: yaml.loader [assertion]
+      find_module called for: yaml.reader [assertion]
+      find_module called for: yaml.scanner [assertion]
+      find_module called for: yaml.parser [assertion]
+      find_module called for: yaml.composer [assertion]
+      find_module called for: yaml.constructor [assertion]
+      find_module called for: yaml.resolver [assertion]
+      find_module called for: yaml.dumper [assertion]
+      find_module called for: yaml.emitter [assertion]
+      find_module called for: yaml.serializer [assertion]
+      find_module called for: yaml.representer [assertion]
+      find_module called for: yaml.cyaml [assertion]
+      find_module called for: _yaml [assertion]
+      find_module called for: ansible.config.data [assertion]
+      find_module called for: ansible.errors [assertion]
+      find_module called for: ansible.errors.yaml_strings [assertion]
+      find_module called for: ansible.module_utils.six.moves [assertion]
+      find_module called for: configparser [assertion]
+      find_module called for: ansible.parsing [assertion]
+      find_module called for: ansible.parsing.quoting [assertion]
+      find_module called for: ansible.utils [assertion]
+      find_module called for: ansible.utils.path [assertion]
+      find_module called for: encodings.unicode_escape [assertion]
+      find_module called for: ansible.cli [assertion]
+      find_module called for: getpass [assertion]
+      find_module called for: optparse [assertion]
+      find_module called for: ansible.inventory [assertion]
+      find_module called for: ansible.inventory.manager [assertion]
+      find_module called for: ansible.inventory.data [assertion]
+      find_module called for: ansible.inventory.group [assertion]
+      find_module called for: ansible.inventory.host [assertion]
+      find_module called for: ansible.utils.vars [assertion]
+      find_module called for: ansible.parsing.splitter [assertion]
+      find_module called for: ansible.utils.display [assertion]
+      find_module called for: ansible.utils.color [assertion]
+      find_module called for: ansible.parsing.utils [assertion]
+      find_module called for: ansible.parsing.utils.addresses [assertion]
+      find_module called for: ansible.plugins [assertion]
+      find_module called for: ansible.plugins.loader [assertion]
+      find_module called for: ansible.parsing.utils.yaml [assertion]
+      find_module called for: ansible.parsing.yaml [assertion]
+      find_module called for: ansible.parsing.yaml.loader [assertion]
+      find_module called for: ansible.parsing.yaml.constructor [assertion]
+      find_module called for: ansible.parsing.yaml.objects [assertion]
+      find_module called for: ansible.utils.unsafe_proxy [assertion]
+      find_module called for: ansible.parsing.vault [assertion]
+      find_module called for: cryptography [assertion]
+      find_module called for: cryptography.__about__ [assertion]
+      find_module called for: cryptography.exceptions [assertion]
+      find_module called for: cryptography.hazmat [assertion]
+      find_module called for: cryptography.hazmat.backends [assertion]
+      find_module called for: cryptography.hazmat.primitives [assertion]
+      find_module called for: cryptography.hazmat.primitives.hashes [assertion]
+      find_module called for: cryptography.utils [assertion]
+      find_module called for: cryptography.hazmat.backends.interfaces [assertion]
+      find_module called for: cryptography.hazmat.primitives.padding [assertion]
+      find_module called for: cryptography.hazmat.bindings [assertion]
+      find_module called for: cryptography.hazmat.bindings._padding [assertion]
+      find_module called for: _cffi_backend [assertion]
+      find_module called for: cryptography.hazmat.primitives.hmac [assertion]
+      find_module called for: cryptography.hazmat.primitives.mac [assertion]
+      find_module called for: cryptography.hazmat.primitives.kdf [assertion]
+      find_module called for: cryptography.hazmat.primitives.kdf.pbkdf2 [assertion]
+      find_module called for: cryptography.hazmat.primitives.constant_time [assertion]
+      find_module called for: hmac [assertion]
+      find_module called for: cryptography.hazmat.bindings._constant_time [assertion]
+      find_module called for: cryptography.hazmat.primitives.ciphers [assertion]
+      find_module called for: cryptography.hazmat.primitives.ciphers.base [assertion]
+      find_module called for: cryptography.hazmat.primitives.ciphers.modes [assertion]
+      find_module called for: cryptography.hazmat.primitives.ciphers.algorithms [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.backend [assertion]
+      find_module called for: cryptography.x509 [assertion]
+      find_module called for: cryptography.x509.certificate_transparency [assertion]
+      find_module called for: cryptography.x509.base [assertion]
+      find_module called for: cryptography.hazmat.primitives.asymmetric [assertion]
+      find_module called for: cryptography.hazmat.primitives.asymmetric.dsa [assertion]
+      find_module called for: cryptography.hazmat.primitives.asymmetric.ec [assertion]
+      find_module called for: cryptography.hazmat.primitives.asymmetric.rsa [assertion]
+      find_module called for: cryptography.x509.extensions [assertion]
+      find_module called for: asn1crypto [assertion]
+      find_module called for: asn1crypto.version [assertion]
+      find_module called for: asn1crypto.keys [assertion]
+      find_module called for: asn1crypto._elliptic_curve [assertion]
+      find_module called for: asn1crypto._int [assertion]
+      find_module called for: asn1crypto.util [assertion]
+      find_module called for: asn1crypto._errors [assertion]
+      find_module called for: asn1crypto._iri [assertion]
+      find_module called for: encodings.idna [assertion]
+      find_module called for: stringprep [assertion]
+      find_module called for: asn1crypto._types [assertion]
+      find_module called for: asn1crypto._ordereddict [assertion]
+      find_module called for: asn1crypto._ffi [assertion]
+      find_module called for: asn1crypto._perf [assertion]
+      find_module called for: asn1crypto._perf._big_num_ctypes [assertion]
+      find_module called for: asn1crypto.algos [assertion]
+      find_module called for: asn1crypto.core [assertion]
+      find_module called for: asn1crypto._teletex_codec [assertion]
+      find_module called for: asn1crypto.parser [assertion]
+      find_module called for: cryptography.hazmat.primitives.serialization [assertion]
+      find_module called for: cryptography.x509.general_name [assertion]
+      find_module called for: idna [assertion]
+      find_module called for: idna.package_data [assertion]
+      find_module called for: idna.core [assertion]
+      find_module called for: idna.idnadata [assertion]
+      find_module called for: idna.intranges [assertion]
+      find_module called for: cryptography.x509.name [assertion]
+      find_module called for: cryptography.x509.oid [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.aead [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.ciphers [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.cmac [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.decode_asn1 [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.dh [assertion]
+      find_module called for: cryptography.hazmat.primitives.asymmetric.dh [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.dsa [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.utils [assertion]
+      find_module called for: cryptography.hazmat.primitives.asymmetric.utils [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.ec [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.encode_asn1 [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.hashes [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.hmac [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.rsa [assertion]
+      find_module called for: cryptography.hazmat.primitives.asymmetric.padding [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.x25519 [assertion]
+      find_module called for: cryptography.hazmat.primitives.asymmetric.x25519 [assertion]
+      find_module called for: cryptography.hazmat.backends.openssl.x509 [assertion]
+      find_module called for: cryptography.hazmat.bindings.openssl [assertion]
+      find_module called for: cryptography.hazmat.bindings.openssl.binding [assertion]
+      find_module called for: cryptography.hazmat.bindings._openssl [assertion]
+      find_module called for: cryptography.hazmat.bindings.openssl._conditional [assertion]
+      find_module called for: cryptography.hazmat.primitives.kdf.scrypt [assertion]
+      find_module called for: Crypto [assertion]
+      find_module called for: ansible.parsing.ajson [assertion]
+      find_module called for: ansible.utils.plugin_docs [assertion]
+      find_module called for: ansible.parsing.plugin_docs [assertion]
+      find_module called for: ansible.parsing.metadata [assertion]
+      find_module called for: ansible.parsing.dataloader [assertion]
+      find_module called for: ansible.module_utils.basic [assertion]
+      find_module called for: syslog [assertion]
+      find_module called for: systemd [assertion]
+      find_module called for: selinux [assertion]
+      find_module called for: ansible.module_utils.pycompat24 [assertion]
+      find_module called for: ansible.vars [assertion]
+      find_module called for: ansible.vars.manager [assertion]
+      find_module called for: ansible.inventory.helpers [assertion]
+      find_module called for: ansible.plugins.cache [assertion]
+      find_module called for: ansible.template [assertion]
+      find_module called for: ansible.template.safe_eval [assertion]
+      find_module called for: ansible.template.template [assertion]
+      find_module called for: ansible.template.vars [assertion]
+      find_module called for: ansible.utils.listify [assertion]
+      find_module called for: ansible.vars.clean [assertion]
+      find_module called for: ansible.cli.playbook [assertion]
+      find_module called for: ansible.executor [assertion]
+      find_module called for: ansible.executor.playbook_executor [assertion]
+      find_module called for: ansible.executor.task_queue_manager [assertion]
+      find_module called for: ansible.executor.play_iterator [assertion]
+      find_module called for: ansible.playbook [assertion]
+      find_module called for: ansible.playbook.play [assertion]
+      find_module called for: ansible.playbook.attribute [assertion]
+      find_module called for: ansible.playbook.base [assertion]
+      find_module called for: ansible.playbook.become [assertion]
+      find_module called for: ansible.playbook.block [assertion]
+      find_module called for: ansible.playbook.conditional [assertion]
+      find_module called for: ansible.playbook.helpers [assertion]
+      find_module called for: ansible.parsing.mod_args [assertion]
+      find_module called for: ansible.playbook.role [assertion]
+      find_module called for: ansible.playbook.role.metadata [assertion]
+      find_module called for: ansible.playbook.role.include [assertion]
+      find_module called for: ansible.playbook.role.definition [assertion]
+      find_module called for: ansible.playbook.taggable [assertion]
+      find_module called for: ansible.playbook.role.requirement [assertion]
+      find_module called for: tarfile [assertion]
+      find_module called for: ansible.playbook.playbook_include [assertion]
+      find_module called for: ansible.playbook.task [assertion]
+      find_module called for: ansible.playbook.loop_control [assertion]
+      find_module called for: ansible.executor.stats [assertion]
+      find_module called for: ansible.executor.task_result [assertion]
+      find_module called for: ansible.playbook.play_context [assertion]
+      find_module called for: ansible.utils.ssh_functions [assertion]
+      find_module called for: ansible.plugins.callback [assertion]
+      find_module called for: ansible.utils.helpers [assertion]
+      find_module called for: ansible.vars.hostvars [assertion]
+      find_module called for: ansible.vars.reserved [assertion]
+      find_module called for: ansible.plugins.inventory [assertion]
+      find_module called for: ansible.utils.shlex [assertion]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __name__
+            obj: molecule.default.tests.test_default
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __doc__
+            obj: None
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __package__
+            obj: molecule.default.tests
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __loader__
+            obj: <_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fa9afc6feb8>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __spec__
+            obj: ModuleSpec(name='molecule.default.tests.test_default', loader=<_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7fa9afc6feb8>, origin='/home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py')
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __file__
+            obj: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/test_default.py
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __cached__
+            obj: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default/tests/__pycache__/test_default.cpython-36-PYTEST.pyc
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __builtins__
+            obj: {'__name__': 'builtins', '__doc__': "Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.", '__package__': '', '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': ModuleSpec(name='builtins', loader=<class '_frozen_importlib.BuiltinImporter'>), '__build_class__': <built-in function __build_class__>, '__import__': <built-in function __import__>, 'abs': <built-in function abs>, 'all': <built-in function all>, 'any': <built-in function any>, 'ascii': <built-in function ascii>, 'bin': <built-in function bin>, 'callable': <built-in function callable>, 'chr': <built-in function chr>, 'compile': <built-in function compile>, 'delattr': <built-in function delattr>, 'dir': <built-in function dir>, 'divmod': <built-in function divmod>, 'eval': <built-in function eval>, 'exec': <built-in function exec>, 'format': <built-in function format>, 'getattr': <built-in function getattr>, 'globals': <built-in function globals>, 'hasattr': <built-in function hasattr>, 'hash': <built-in function hash>, 'hex': <built-in function hex>, 'id': <built-in function id>, 'input': <built-in function input>, 'isinstance': <built-in function isinstance>, 'issubclass': <built-in function issubclass>, 'iter': <built-in function iter>, 'len': <built-in function len>, 'locals': <built-in function locals>, 'max': <built-in function max>, 'min': <built-in function min>, 'next': <built-in function next>, 'oct': <built-in function oct>, 'ord': <built-in function ord>, 'pow': <built-in function pow>, 'print': <built-in function print>, 'repr': <built-in function repr>, 'round': <built-in function round>, 'setattr': <built-in function setattr>, 'sorted': <built-in function sorted>, 'sum': <built-in function sum>, 'vars': <built-in function vars>, 'None': None, 'Ellipsis': Ellipsis, 'NotImplemented': NotImplemented, 'False': False, 'True': True, 'bool': <class 'bool'>, 'memoryview': <class 'memoryview'>, 'bytearray': <class 'bytearray'>, 'bytes': <class 'bytes'>, 'classmethod': <class 'classmethod'>, 'complex': <class 'complex'>, 'dict': <class 'dict'>, 'enumerate': <class 'enumerate'>, 'filter': <class 'filter'>, 'float': <class 'float'>, 'frozenset': <class 'frozenset'>, 'property': <class 'property'>, 'int': <class 'int'>, 'list': <class 'list'>, 'map': <class 'map'>, 'object': <class 'object'>, 'range': <class 'range'>, 'reversed': <class 'reversed'>, 'set': <class 'set'>, 'slice': <class 'slice'>, 'staticmethod': <class 'staticmethod'>, 'str': <class 'str'>, 'super': <class 'super'>, 'tuple': <class 'tuple'>, 'type': <class 'type'>, 'zip': <class 'zip'>, '__debug__': True, 'BaseException': <class 'BaseException'>, 'Exception': <class 'Exception'>, 'TypeError': <class 'TypeError'>, 'StopAsyncIteration': <class 'StopAsyncIteration'>, 'StopIteration': <class 'StopIteration'>, 'GeneratorExit': <class 'GeneratorExit'>, 'SystemExit': <class 'SystemExit'>, 'KeyboardInterrupt': <class 'KeyboardInterrupt'>, 'ImportError': <class 'ImportError'>, 'ModuleNotFoundError': <class 'ModuleNotFoundError'>, 'OSError': <class 'OSError'>, 'EnvironmentError': <class 'OSError'>, 'IOError': <class 'OSError'>, 'EOFError': <class 'EOFError'>, 'RuntimeError': <class 'RuntimeError'>, 'RecursionError': <class 'RecursionError'>, 'NotImplementedError': <class 'NotImplementedError'>, 'NameError': <class 'NameError'>, 'UnboundLocalError': <class 'UnboundLocalError'>, 'AttributeError': <class 'AttributeError'>, 'SyntaxError': <class 'SyntaxError'>, 'IndentationError': <class 'IndentationError'>, 'TabError': <class 'TabError'>, 'LookupError': <class 'LookupError'>, 'IndexError': <class 'IndexError'>, 'KeyError': <class 'KeyError'>, 'ValueError': <class 'ValueError'>, 'UnicodeError': <class 'UnicodeError'>, 'UnicodeEncodeError': <class 'UnicodeEncodeError'>, 'UnicodeDecodeError': <class 'UnicodeDecodeError'>, 'UnicodeTranslateError': <class 'UnicodeTranslateError'>, 'AssertionError': <class 'AssertionError'>, 'ArithmeticError': <class 'ArithmeticError'>, 'FloatingPointError': <class 'FloatingPointError'>, 'OverflowError': <class 'OverflowError'>, 'ZeroDivisionError': <class 'ZeroDivisionError'>, 'SystemError': <class 'SystemError'>, 'ReferenceError': <class 'ReferenceError'>, 'BufferError': <class 'BufferError'>, 'MemoryError': <class 'MemoryError'>, 'Warning': <class 'Warning'>, 'UserWarning': <class 'UserWarning'>, 'DeprecationWarning': <class 'DeprecationWarning'>, 'PendingDeprecationWarning': <class 'PendingDeprecationWarning'>, 'SyntaxWarning': <class 'SyntaxWarning'>, 'RuntimeWarning': <class 'RuntimeWarning'>, 'FutureWarning': <class 'FutureWarning'>, 'ImportWarning': <class 'ImportWarning'>, 'UnicodeWarning': <class 'UnicodeWarning'>, 'BytesWarning': <class 'BytesWarning'>, 'ResourceWarning': <class 'ResourceWarning'>, 'ConnectionError': <class 'ConnectionError'>, 'BlockingIOError': <class 'BlockingIOError'>, 'BrokenPipeError': <class 'BrokenPipeError'>, 'ChildProcessError': <class 'ChildProcessError'>, 'ConnectionAbortedError': <class 'ConnectionAbortedError'>, 'ConnectionRefusedError': <class 'ConnectionRefusedError'>, 'ConnectionResetError': <class 'ConnectionResetError'>, 'FileExistsError': <class 'FileExistsError'>, 'FileNotFoundError': <class 'FileNotFoundError'>, 'IsADirectoryError': <class 'IsADirectoryError'>, 'NotADirectoryError': <class 'NotADirectoryError'>, 'InterruptedError': <class 'InterruptedError'>, 'PermissionError': <class 'PermissionError'>, 'ProcessLookupError': <class 'ProcessLookupError'>, 'TimeoutError': <class 'TimeoutError'>, 'open': <built-in function open>, 'quit': Use quit() or Ctrl-D (i.e. EOF) to exit, 'exit': Use exit() or Ctrl-D (i.e. EOF) to exit, 'copyright': Copyright (c) 2001-2018 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved., 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information., 'license': See http://www.python.org/3.6/license.html, 'help': Type help() for interactive help, or help(object) for help about object.}
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: @py_builtins
+            obj: <module 'builtins' (built-in)>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: @pytest_ar
+            obj: <module '_pytest.assertion.rewrite' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/assertion/rewrite.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: os
+            obj: <module 'os' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/os.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: testinfra
+            obj: <module 'testinfra' from '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/testinfra/__init__.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: testinfra_hosts
+            obj: ['ansible-role-node-test-instance-14-04', 'ansible-role-node-test-instance-16-04', 'ansible-role-node-test-instance-18-08', 'ansible-role-node-test-instance-buster', 'ansible-role-node-test-instance-centos7', 'ansible-role-node-test-instance-jessie', 'ansible-role-node-test-instance-stretch']
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: test_node_version_ok
+            obj: <function test_node_version_ok at 0x7fa9af676510>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7fa9ad2c8828>
+          find_module called for: testinfra.backend.ansible [assertion]
+          matched marked file 'testinfra.backend.ansible' (from 'testinfra') [assertion]
+          found cached rewritten pyc for '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/testinfra/backend/ansible.py' [assertion]
+          find_module called for: testinfra.backend.base [assertion]
+          matched marked file 'testinfra.backend.base' (from 'testinfra') [assertion]
+          found cached rewritten pyc for '/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/testinfra/backend/base.py' [assertion]
+          find_module called for: pipes [assertion]
+          find_module called for: py._io.saferepr [assertion]
+          find_module called for: repr [assertion]
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-stretch]'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: test_npm_ok
+            obj: <function test_npm_ok at 0x7fa9ad2df9d8>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7fa9ad2f8a90>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_npm_ok[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-stretch]'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: test_user_npm_ok
+            obj: <function test_user_npm_ok at 0x7fa9ad2a3488>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7fa9ad2b07f0>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-stretch]'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: test_user_node_version_ok
+            obj: <function test_user_node_version_ok at 0x7fa9ad2a3510>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7fa9ad2b0ef0>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-stretch]'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: test_user_can_install_and_see_gulp
+            obj: <function test_user_can_install_and_see_gulp at 0x7fa9ad2a3598>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7fa9ad241710>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-stretch]'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __repr__
+            obj: <slot wrapper '__repr__' of 'module' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __getattribute__
+            obj: <slot wrapper '__getattribute__' of 'module' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __setattr__
+            obj: <slot wrapper '__setattr__' of 'module' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __delattr__
+            obj: <slot wrapper '__delattr__' of 'module' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __init__
+            obj: <slot wrapper '__init__' of 'module' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __new__
+            obj: <built-in method __new__ of type object at 0x9fd2a0>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __dir__
+            obj: <method '__dir__' of 'module' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __dict__
+            obj: <member '__dict__' of 'module' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __hash__
+            obj: <slot wrapper '__hash__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __str__
+            obj: <slot wrapper '__str__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __lt__
+            obj: <slot wrapper '__lt__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __le__
+            obj: <slot wrapper '__le__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __eq__
+            obj: <slot wrapper '__eq__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __ne__
+            obj: <slot wrapper '__ne__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __gt__
+            obj: <slot wrapper '__gt__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __ge__
+            obj: <slot wrapper '__ge__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __reduce_ex__
+            obj: <method '__reduce_ex__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __reduce__
+            obj: <method '__reduce__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __subclasshook__
+            obj: <method '__subclasshook__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __init_subclass__
+            obj: <method '__init_subclass__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __format__
+            obj: <method '__format__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __sizeof__
+            obj: <method '__sizeof__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module 'tests/test_default.py'>
+            name: __class__
+            obj: <attribute '__class__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/test_default.py' lenresult=35 outcome='passed'> [hook]
+    genitems <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-14-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-14-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-16-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-16-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-18-08]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-18-08]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-buster]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-buster]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-centos7]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-centos7]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-jessie]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-jessie]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-stretch]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-stretch]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-14-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-14-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-16-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-16-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-18-08]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-18-08]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-buster]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-buster]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-centos7]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-centos7]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-jessie]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-jessie]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-stretch]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-stretch]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-14-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-14-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-16-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-16-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-18-08]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-18-08]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-buster]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-buster]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-centos7]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-centos7]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-jessie]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-jessie]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-stretch]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-stretch]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-14-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-14-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-16-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-16-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-18-08]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-18-08]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-buster]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-buster]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-centos7]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-centos7]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-jessie]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-jessie]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-stretch]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-stretch]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-14-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-14-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-16-04]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-16-04]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-18-08]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-18-08]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-buster]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-buster]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-centos7]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-centos7]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-jessie]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-jessie]'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-stretch]'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-stretch]'>
+      finish pytest_itemcollected --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/test_default.py' lenresult=35 outcome='passed'>
+      pytest_collection_finish [hook]
+          session: <Session 'default'>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x7fa9b03f2320>
+            startdir: /home/grzegorz/My_Webs/ansible-nvm-node/molecule/default
+            items: [<Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_node_version_ok[ansible://ansible-role-node-test-instance-stretch]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_npm_ok[ansible://ansible-role-node-test-instance-stretch]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_user_npm_ok[ansible://ansible-role-node-test-instance-stretch]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_user_node_version_ok[ansible://ansible-role-node-test-instance-stretch]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-14-04]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-16-04]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-18-08]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-buster]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-centos7]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-jessie]'>, <Function 'test_user_can_install_and_see_gulp[ansible://ansible-role-node-test-instance-stretch]'>]
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    find_module called for: py._io.capture [assertion]
+    pytest_internalerror [hook]
+        excrepr: Traceback (most recent call last):
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/main.py", line 178, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/main.py", line 214, in _main
+    config.hook.pytest_collection(session=session)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/hooks.py", line 258, in __call__
+    return self._hookexec(self, self._nonwrappers + self._wrappers, kwargs)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/manager.py", line 67, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/_tracing.py", line 82, in __call__
+    return outcome.get_result()
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 76, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 48, in from_call
+    result = func()
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/_tracing.py", line 80, in <lambda>
+    outcome = _Result.from_call(lambda: self.oldcall(hook, hook_impls, kwargs))
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/manager.py", line 61, in <lambda>
+    firstresult=hook.spec_opts.get('firstresult'),
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 201, in _multicall
+    return outcome.get_result()
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 76, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 180, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/main.py", line 224, in pytest_collection
+    return session.perform_collect()
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/main.py", line 428, in perform_collect
+    items = self._perform_collect(args, genitems)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/main.py", line 466, in _perform_collect
+    self.items.extend(self.genitems(node))
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/main.py", line 662, in genitems
+    node.ihook.pytest_collectreport(report=rep)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/hooks.py", line 258, in __call__
+    return self._hookexec(self, self._nonwrappers + self._wrappers, kwargs)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/manager.py", line 67, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/_tracing.py", line 82, in __call__
+    return outcome.get_result()
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 76, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 48, in from_call
+    result = func()
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/_tracing.py", line 80, in <lambda>
+    outcome = _Result.from_call(lambda: self.oldcall(hook, hook_impls, kwargs))
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/manager.py", line 61, in <lambda>
+    firstresult=hook.spec_opts.get('firstresult'),
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 201, in _multicall
+    return outcome.get_result()
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 76, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/pluggy/callers.py", line 180, in _multicall
+    res = hook_impl.function(*args)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/terminal.py", line 454, in pytest_collectreport
+    self.report_collect()
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/terminal.py", line 477, in report_collect
+    self.rewrite(line, bold=True, erase=True)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/_pytest/terminal.py", line 313, in rewrite
+    self._tw.write("\r" + line + fill, **markup)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/py/_io/terminalwriter.py", line 224, in write
+    write_out(self._file, markupmsg)
+  File "/home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/py/_io/terminalwriter.py", line 369, in write_out
+    fil.write(msg)
+OSError: [Errno 5] Input/output error
+        excinfo: /home/grzegorz/My_Webs/ansible-roles/py_env/lib/python3.6/site-packages/py/_io/terminalwriter.py:369: OSError: [Errno 5] Input/output error
+    pytest_sessionfinish [hook]
+        session: <Session 'default'>
+        exitstatus: 0
+  pytest_unconfigure [hook]
+      config: <_pytest.config.Config object at 0x7fa9b03f2320>
+  finish pytest_unconfigure --> [] [hook]
+finish [config:tmpdir]

@@ -9,7 +9,7 @@ set a reminder for all users in a channel directly using a single command
 
 ## Installation
 
-* clone the repo `git clone git@github.com:grzegorznowak/slack-remind-all.git`
+* clone the repo `git clone https://github.com/grzegorznowak/slack-remind-all.git`
 * setup virtualenv: `virtualenv pyenv -p python3.6.7`
 * activate venv: `. pyenv/bin/activate`
 * `pip install -f requirements.txt`
@@ -33,7 +33,8 @@ by default the app listens on `port 3000`, and it's currently fixed, but you can
 ## Provisioning on a server/container
 see [Provisioning instructions](priovision/README.md)
 
-
+please note: provisioned service is exposed via http on a container's port, so need a SSL terminating proxy to function best
+  
 ### @TODO:
 
 * proper CI, test-coverage for the python part, shiny badges, etc. We all love those!
