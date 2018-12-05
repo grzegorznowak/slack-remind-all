@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+
+  roles:
+    - role: provision
+      slack_remind_all_oauth: "oauth key"
+      slack_remind_all_secret: "signing secret"

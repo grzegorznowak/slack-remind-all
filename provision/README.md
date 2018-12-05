@@ -23,7 +23,7 @@
 
 disclaimer: our main container-providing tool is `lxc/lxd` and so is the molecule setup,
 but feel free to `dockerize` the app and do PR if you need it
-
+* create virtualenv for molecule (python3.6+ recommended) and `source` into it
 * install dependencies:
 ```
 pip install molecule
@@ -38,9 +38,15 @@ cp molecule/dist/playbook.dist.yml molecule/dist/playbook.yml
 ```
 molecule create --scenario-name=dist && molecule converge --scenario-name=dist
 ```
+* or if you've installed lxd via snap:
+```
+molecule create --scenario-name=dist-snap && molecule converge --scenario-name=dist-snap
+```
         
 ### Testing via molecule
 
+* create virtualenv for molecule (python3.6+ recommended) and `source` into it
+* then
 ```
 pip install molecule
 molecule test
