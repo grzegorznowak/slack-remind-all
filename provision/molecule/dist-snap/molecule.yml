@@ -6,7 +6,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: slack-notify-dist-18-04
+  - name: slack-remindall-app-dist-18-04
     image: ubuntu/bionic/amd64
 provisioner:
   name: ansible

@@ -35,6 +35,23 @@ see [Provisioning instructions](provision/README.md)
 
 please note: provisioned service is exposed via http on a container's port, so need a SSL terminating proxy to function best
   
+  
+### Slack
+
+#### Sample output from the app (with one user and one bot in the channel) 
+![sample outpuot](img/sample output.png "Sample output")
+
+#### Crucial Slack App config:
+
+* make sure to add the slash command 
+![app slash setup](img/app slash setup.png "App slash setup")
+
+* and configure the touching points
+![slash config](img/slash config.png "Slash config")
+
+##### make sure to put in your app endpoint's URL in the config with the slash handler URI specified 
+ie. `https://example.com:3000/slack/slash` 
+  
 ### @TODO:
 
 * proper CI, test-coverage for the python part, shiny badges, etc. We all love those!
@@ -49,4 +66,4 @@ please note: provisioned service is exposed via http on a container's port, so n
 
 #### Author Information
 
-python, slack & shell coding by [Grzegorz Nowak](https://www.linkedin.com/in/grzegorz-nowak-356b7360/)
+python, Slack & Ansible coding by [Grzegorz Nowak](https://www.linkedin.com/in/grzegorz-nowak-356b7360/)
