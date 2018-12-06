@@ -23,6 +23,15 @@ tool will spare in the long run
 `Disclaimerinho: Me being a dev myself`
 
 === All feedback & PRs highly appreciated === 
+
+## Usage
+
+Just invoke this in a channel and you're good
+```
+/remindall about something very important in 1 hour
+```
+(see further down for a sample output on Slack)
+
 ## Requirements
 
 * python 3.6+
