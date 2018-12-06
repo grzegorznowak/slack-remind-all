@@ -28,7 +28,7 @@ tool will spare in the long run
 * python 3.6+
 * (optional) ngrok
 
-## Installation
+## Local Setup
 
 * clone the repo `git clone https://github.com/grzegorznowak/slack-remind-all.git`
 * setup virtualenv: `virtualenv pyenv -p python3.6`
@@ -57,7 +57,7 @@ see [Provisioning instructions](provision/README.md)
 please note: provisioned service is exposed via http on a container's port, so need a SSL terminating proxy to function best
   
   
-### Slack
+## Slack Setup
 
 #### Sample output from the app (with one user and one bot in the channel) 
 ![sample output](img/sample%20output.png "Sample output")
