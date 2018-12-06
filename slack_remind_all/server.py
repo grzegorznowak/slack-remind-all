@@ -22,10 +22,8 @@ remind_replace_tokens = ['about', 'to', 'that']
 
 
 def get_channel_members(channel_id):
-    print(channel_id)
     gathered_uids = []
     members_response = slack_client.api_call("conversations.members", channel=channel_id)
-    print(members_response)
 
     if members_response['ok'] is True:
         gathered_uids.extend(members_response['members'])
