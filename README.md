@@ -25,13 +25,13 @@ tool will spare in the long run
 === All feedback & PRs highly appreciated === 
 ## Requirements
 
-* python 3.5+
+* python 3.6+
 * (optional) ngrok
 
 ## Installation
 
 * clone the repo `git clone https://github.com/grzegorznowak/slack-remind-all.git`
-* setup virtualenv: `virtualenv pyenv -p python3.6.7`
+* setup virtualenv: `virtualenv pyenv -p python3.6`
 * activate venv: `. pyenv/bin/activate`
 * `pip install -f requirements.txt`
 
