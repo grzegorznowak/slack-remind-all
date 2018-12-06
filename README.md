@@ -23,12 +23,21 @@ tool will spare in the long run
 `Disclaimerinho: Me being a dev myself`
 
 === All feedback & PRs highly appreciated === 
+
+## Usage
+
+Just invoke this in a channel and you're good
+```
+/remindall about something very important in 1 hour
+```
+(see further down for a sample output on Slack)
+
 ## Requirements
 
 * python 3.6+
 * (optional) ngrok
 
-## Installation
+## App Setup
 
 * clone the repo `git clone https://github.com/grzegorznowak/slack-remind-all.git`
 * setup virtualenv: `virtualenv pyenv -p python3.6`
@@ -51,13 +60,13 @@ python {{ slack_remind_all_location }}/slack_remind_all/server.py
 by default the app listens on `port 3000`, and it's currently fixed, but you can change that with a pinch of python.
 
 
-## Provisioning on a server/container
+### Provisioning on a server/container
 see [Provisioning instructions](provision/README.md)
 
 please note: provisioned service is exposed via http on a container's port, so need a SSL terminating proxy to function best
   
   
-### Slack
+## Slack Setup
 
 #### Sample output from the app (with one user and one bot in the channel) 
 ![sample output](img/sample%20output.png "Sample output")
