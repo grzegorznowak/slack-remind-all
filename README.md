@@ -28,7 +28,7 @@ tool will spare in the long run
 * python 3.6+
 * (optional) ngrok
 
-## Local Setup
+## App Setup
 
 * clone the repo `git clone https://github.com/grzegorznowak/slack-remind-all.git`
 * setup virtualenv: `virtualenv pyenv -p python3.6`
@@ -51,7 +51,7 @@ python {{ slack_remind_all_location }}/slack_remind_all/server.py
 by default the app listens on `port 3000`, and it's currently fixed, but you can change that with a pinch of python.
 
 
-## Provisioning on a server/container
+### Provisioning on a server/container
 see [Provisioning instructions](provision/README.md)
 
 please note: provisioned service is exposed via http on a container's port, so need a SSL terminating proxy to function best
