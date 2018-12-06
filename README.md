@@ -67,8 +67,11 @@ please note: provisioned service is exposed via http on a container's port, so n
 * make sure to add the slash command 
 ![app slash setup](img/app%20slash%20setup.png "App slash setup")
 
-* and configure the touching points
+* configure the touching points
 ![slash config](img/slash%20config.png "Slash config")
+
+* and add the required scopes
+![scopes](img/scopes.png "Slash config")
 
 ##### make sure to put in your app endpoint's URL in the config with the slash handler URI specified 
 ie. `https://example.com:3000/slack/slash` 
