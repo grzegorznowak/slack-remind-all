@@ -50,7 +50,7 @@ def extract_remind_body(text):
 def date_extract(text):
 
     parsed = search_dates(text)
-    date = None
+    date = ""
     if parsed is not None and len(parsed):
         date = parsed[-1][0]
 
