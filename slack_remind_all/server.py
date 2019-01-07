@@ -1,6 +1,7 @@
 import os
 import sys
 import hmac
+import logging
 import hashlib
 
 from threading import Thread
@@ -20,6 +21,7 @@ slack_client = SlackClient(slack_oauth_token)
 
 remind_replace_tokens = ['about', 'to', 'that']
 
+logger = logging.getLogger(__name__)
 
 def get_channel_members(channel_id):
     gathered_uids = []
@@ -55,7 +57,7 @@ def date_extract(text):
         date = parsed[-1][0]
     elif parsed is None:
         date = "now"
-        
+
     return text.replace(date, "").strip(), date
 
 
@@ -108,6 +110,8 @@ def slash_actions_thread(text, channel_id, channel_name, response_url, remind_bo
                         "text": "Ups! I failed setting up the reminder for those folks:",
                         "attachments": failed_attachments
                     })
+                    [logger.error("Error processing a reminder: {}".format(reminder))
+                     for reminder in reminders if reminder['ok'] is False]
 
             else:
                 post(response_url, json={
