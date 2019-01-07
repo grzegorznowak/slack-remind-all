@@ -50,10 +50,12 @@ def extract_remind_body(text):
 def date_extract(text):
 
     parsed = search_dates(text)
-    date = ""
+    date = None
     if parsed is not None and len(parsed):
         date = parsed[-1][0]
-
+    elif parsed is None:
+        date = "now"
+        
     return text.replace(date, "").strip(), date
 
 
