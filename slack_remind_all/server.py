@@ -51,7 +51,7 @@ def date_extract(text):
 
     parsed = search_dates(text)
     date = None
-    if len(parsed):
+    if parsed is not None and len(parsed):
         date = parsed[-1][0]
 
     return text.replace(date, "").strip(), date
