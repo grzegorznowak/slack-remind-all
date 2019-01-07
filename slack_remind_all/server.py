@@ -62,8 +62,14 @@ def date_extract(text):
 
 
 def setup_reminder(user_id, remind_body, remind_time):
-    print("setting up reminder {}, {} for {}".format(remind_body, remind_time, user_id))
-    return slack_client.api_call("reminders.add", text=remind_body, time=remind_time, user=user_id)
+    logger.info("setting up reminder {}, {} for {}".format(remind_body, remind_time, user_id))
+    result = slack_client.api_call("reminders.add", text=remind_body, time=remind_time, user=user_id)
+
+    if result['ok'] is False:
+        logger.error("Error calling API: \nBody:{} \nTime:{} \nResponse: {}"
+                     .format(remind_body, remind_time, result))
+
+    return result
 
 
 def slash_actions_thread(text, channel_id, channel_name, response_url, remind_body, remind_time):
@@ -110,8 +116,6 @@ def slash_actions_thread(text, channel_id, channel_name, response_url, remind_bo
                         "text": "Ups! I failed setting up the reminder for those folks:",
                         "attachments": failed_attachments
                     })
-                    [logger.error("Error processing a reminder: {}".format(reminder))
-                     for reminder in reminders if reminder['ok'] is False]
 
             else:
                 post(response_url, json={
