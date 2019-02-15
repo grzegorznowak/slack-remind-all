@@ -23,6 +23,7 @@ slack_client = SlackClient(slack_oauth_token)
 remind_replace_tokens = ['about', 'to', 'that']
 
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 
 def get_channel_members(channel_id):
