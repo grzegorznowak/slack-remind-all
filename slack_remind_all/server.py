@@ -7,9 +7,8 @@ import hashlib
 from threading import Thread
 from duckling import DucklingWrapper
 
-from flask import Flask, request, jsonify, abort, json
+from flask import Flask, request, jsonify, abort
 from slackclient import SlackClient
-from dateparser.search import search_dates
 from requests import post
 
 
@@ -56,31 +55,35 @@ def date_extract(text):
 
     parsed = duckling_wrapper.parse_time(text)
     date = None
+    date_text = None
     if parsed is not None and len(parsed):
-        date = parsed[-1]['text']
+        date = parsed[-1]['value']['value']
+        date_text = parsed[-1]['text']
     elif parsed is None:
         logger.error("Cannot parse a date in text: {}".format(text))
         date = "now"
+        date_text = "now"
 
-    return text.replace(date, "").strip(), date
+    return text.replace(date_text, "").strip(), date, date_text
 
 
-def setup_reminder(user_id, remind_body, remind_time):
+def setup_reminder(user_id, remind_body, remind_time, remind_time_text):
     logger.info("setting up reminder {}, {} for {}".format(remind_body, remind_time, user_id))
     result = slack_client.api_call("reminders.add", text=remind_body, time=remind_time, user=user_id)
 
     if result['ok'] is False:
         logger.error("Error calling API: \nBody:{} \nTime:{} \nResponse: {}"
-                     .format(remind_body, remind_time, result))
+                     .format(remind_body, remind_time_text, result))
 
     return result
 
 
-def slash_actions_thread(text, channel_id, channel_name, response_url, remind_body, remind_time):
+def slash_actions_thread(text, channel_id, channel_name, response_url,
+                         remind_body, remind_time, remind_time_text):
     with app.app_context():
 
         if channel_name == 'directmessage':
-            setup_reminder(channel_id, remind_body, remind_time)
+            setup_reminder(channel_id, remind_body, remind_time, remind_time_text)
             post(response_url, json={
                     "text": "Have setup a reminder for this person",
                     "attachments": [
@@ -147,10 +150,12 @@ def slash_actions():
             channel_name = slack_post['channel_name']
             response_url = slack_post['response_url']
 
-            remind_body, remind_time = date_extract(extract_remind_body(text))
+            remind_body, remind_time, remind_time_text = date_extract(extract_remind_body(text))
 
             thread = Thread(target=slash_actions_thread,
-                            args=(text, channel_id, channel_name, response_url, remind_body, remind_time))
+                            args=(text, channel_id, channel_name,
+                                  response_url, remind_body,
+                                  remind_time, remind_time_text))
 
             # respond to the caller already so slack doesn't time out, and do relevant processing in a thread
             thread.start()
