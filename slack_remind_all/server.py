@@ -173,7 +173,7 @@ def slash_actions():
                             "text": "do: {}".format(remind_body),
                         },
                         {
-                            "text": "when: {}".format(remind_time),
+                            "text": "when: {}".format(remind_time_text),
                         }
                     ]
                 }
