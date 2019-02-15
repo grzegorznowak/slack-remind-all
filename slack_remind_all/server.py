@@ -101,7 +101,8 @@ def slash_actions_thread(text, channel_id, channel_name, response_url,
             channel_members = get_channel_members(channel_id)
 
             if len(channel_members):
-                reminders = [setup_reminder(channel_member['user']['id'], remind_body, remind_time)
+                reminders = [setup_reminder(channel_member['user']['id'], remind_body,
+                                            remind_time, remind_time_text)
                              for channel_member in channel_members]
 
                 ok_attachments = [
