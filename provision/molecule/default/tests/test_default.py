@@ -24,3 +24,10 @@ def test_up(host, port):
         '--output /dev/null http://{}:{}/slack/slash'.format('0.0.0.0', port))
 
     assert cmd.stdout == '405'
+
+
+def test_units(host):
+
+    cmd = host.run('. /var/lib/slack_remind_all/pyenv/bin/activate && py.test /var/lib/slack_remind_all/tests')
+    print(cmd.stdout)
+    assert cmd.stdout == '405'

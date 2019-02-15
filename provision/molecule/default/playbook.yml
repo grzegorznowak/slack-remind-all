@@ -4,3 +4,4 @@
 
   roles:
     - role: provision
+      slack_remind_all_location: "/var/lib/slack_remind_all"
