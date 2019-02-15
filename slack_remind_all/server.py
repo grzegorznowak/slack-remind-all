@@ -56,6 +56,7 @@ def date_extract(text):
     if parsed is not None and len(parsed):
         date = parsed[-1][0]
     elif parsed is None:
+        logger.error("Cannot parse a date in text: {}".format(text))
         date = "now"
 
     return text.replace(date, "").strip(), date
