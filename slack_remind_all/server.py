@@ -73,7 +73,7 @@ def date_extract(text):
 
 def setup_reminder(user_id, remind_body, remind_time, remind_time_text):
     logger.info("setting up reminder {}, {} for {}".format(remind_body, remind_time, user_id))
-    result = slack_client.api_call("reminders.add", text=remind_body, time=remind_time, user=user_id)
+    result = slack_client.api_call("reminders.add", text=remind_body, time=remind_time_text, user=user_id)
 
     if result['ok'] is False:
         logger.error("Error calling API: \nBody:{} \nTime:{} \nResponse: {}"
