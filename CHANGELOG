@@ -1,0 +1,2 @@
+(Just general, free flying notes, since releases aren't being tagged yet)
+* Replaced date parsing utility with duckling (https://github.com/FraBle/python-duckling)
