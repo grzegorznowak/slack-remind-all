@@ -45,3 +45,6 @@
 
 - name: Start the custom service
   service: name={{ slack_remind_all_service }}.service state=started
+
+- name: Install duckling
+  include: duckling.yml

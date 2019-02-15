@@ -1,0 +1,7 @@
+---
+- name: Install duckling dependencies
+  apt:
+    update_cache: true
+    cache_valid_time: 1800
+    name: ['openjdk-11-jdk']
+    state: present
