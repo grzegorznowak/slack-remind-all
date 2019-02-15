@@ -5,6 +5,7 @@ import logging
 import hashlib
 
 from threading import Thread
+from duckling import DucklingWrapper
 
 from flask import Flask, request, jsonify, abort, json
 from slackclient import SlackClient
@@ -13,6 +14,7 @@ from requests import post
 
 
 app = Flask(__name__)
+duckling_wrapper = DucklingWrapper()
 
 slack_signing_secret = os.environ["SLACK_SIGNING_SECRET"]
 slack_oauth_token    = os.environ["SLACK_OAUTH_TOKEN"]
@@ -22,6 +24,7 @@ slack_client = SlackClient(slack_oauth_token)
 remind_replace_tokens = ['about', 'to', 'that']
 
 logger = logging.getLogger(__name__)
+
 
 def get_channel_members(channel_id):
     gathered_uids = []
@@ -51,10 +54,10 @@ def extract_remind_body(text):
 
 def date_extract(text):
 
-    parsed = search_dates(text)
+    parsed = duckling_wrapper.parse_time(text)
     date = None
     if parsed is not None and len(parsed):
-        date = parsed[-1][0]
+        date = parsed[-1]['text']
     elif parsed is None:
         logger.error("Cannot parse a date in text: {}".format(text))
         date = "now"
