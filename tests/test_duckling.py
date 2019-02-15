@@ -7,3 +7,7 @@ def test_duckling():
 
     assert result[-1]['dim'] == 'time'
     assert result[-1]['text'] == 'at 11:45am'
+
+    result2 = d.parse_time(u'Scratch after midnight')
+
+    assert result2[-1]['value']['value']['to'] is None

@@ -57,7 +57,11 @@ def date_extract(text):
     date = None
     date_text = None
     if parsed is not None and len(parsed):
-        date = parsed[-1]['value']['value']
+        if type(parsed[-1]['value']['value']) is dict:
+            date = parsed[-1]['value']['value']['from']
+        else:
+            date = parsed[-1]['value']['value']
+
         date_text = parsed[-1]['text']
     elif parsed is None:
         logger.error("Cannot parse a date in text: {}".format(text))
