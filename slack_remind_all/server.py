@@ -5,7 +5,7 @@ import logging
 import hashlib
 
 from threading import Thread
-from duckling import DucklingWrapper
+from utils.duckling_mod import DucklingWrapperMod
 
 from flask import Flask, request, jsonify, abort
 from slackclient import SlackClient
@@ -13,7 +13,7 @@ from requests import post
 
 
 app = Flask(__name__)
-duckling_wrapper = DucklingWrapper()
+duckling_wrapper = DucklingWrapperMod()
 
 slack_signing_secret = os.environ["SLACK_SIGNING_SECRET"]
 slack_oauth_token    = os.environ["SLACK_OAUTH_TOKEN"]
