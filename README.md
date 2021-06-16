@@ -1,5 +1,7 @@
 # Slack Remind All
 
+## NOTE: support for this project on github is now halted. It's being migrated to another platform
+
 set a reminder for all users in a channel directly using a single command
 
 *[A placeholder for a list of cool badges, coming soonish]*
